@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="CrossBrowserTesting" parallel="methods" thread-count="5">
+	
+	<test name="ChromeTest">
+		<parameter name="Browser" value="chrome"></parameter>
+		<classes>
+			<class name="testrunner.TestRunner1"></class>
+		</classes>
+	</test>
+	
+	
+	<test name="EdgeTest">
+		<parameter name="Browser" value="edge"></parameter>
+		<classes>
+			<class name="testrunner.TestRunner1"></class>
+		</classes>
+	</test>	
+	
+</suite>
+
+
+
+
